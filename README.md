@@ -13,7 +13,7 @@ I was searching for a beautiful Chat bubble for C# winform, but the only one i c
 
 ## Usage
 If you r going to use these chat components in your project, I recommed you to use <b>ChatUI.dll</b> in the folder <b>ChatUI Compiled DLL,</b>. In this <b>ChatUI.dll</b> I have compiled all 7 components in this project.
-Just drag the dll file into ur visual studio toolbox. Copy the dll file, create new tab in ur visual studio toolbox and paste.
+Just drag the dll file into ur visual studio toolbox Or Copy the dll file, create new tab in ur visual studio toolbox and paste.
 
 
 ### Components
