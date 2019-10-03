@@ -12,7 +12,9 @@ I was searching for a beautiful Chat bubble for C# winform, but the only one i c
 
 
 ## Usage
-If you r going to these chat components in your project, I recommed you to use <b>ChatUI.dll</b> in the folder <b>ChatUI Compiled DLL,</b>. In this <b>ChatUI.dll</b> I have compiled all 7 components in this project.
+If you r going to use these chat components in your project, I recommed you to use <b>ChatUI.dll</b> in the folder <b>ChatUI Compiled DLL,</b>. In this <b>ChatUI.dll</b> I have compiled all 7 components in this project.
+Just drag the dll file into ur visual studio toolbox. Copy the dll file, create new tab in ur visual studio toolbox and paste.
+
 
 ### Components
 ##### <a href="#BeautyForm">BeautyForm</a>
@@ -38,7 +40,7 @@ See screenshots above, the uppermost part where user details is displayed. It ha
  ``` C#
 chat.ChatHeader chatHeader1 = new chat.ChatHeader();
 
-chatHeader1.UserTitle = "Abdisamad Moh."; // Gets/Sets ur title
+chatHeader1.UserTitle = "Abdisamad Moh."; // Gets/Sets user title
 chatHeader1.UserStatusText = "Typing..."; // Gets/Sets User status text.
 chatHeader1.UserImage = Some_Image; // Gets/Sets User profile image
 
