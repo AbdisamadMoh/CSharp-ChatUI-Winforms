@@ -1,0 +1,53 @@
+﻿
+Requirements:
+ .NET 3.5 or up
+
+
+Development:
+  *Devoloped with VS2015, May work in lower versions as well but not sure/tested.
+
+-----------------------
+Components:
+  *There are a total of 6 components in this project.
+
+  -ChatHeader
+  -SearchBox
+  -Users
+  -TypingBox
+  -MeBubble
+  -YouBubble
+
+-----------------------
+
+*Each component has basic properties(new) + inbuilt .NET properties.
+
+  ChatHeader:
+    Example:-
+	   chatHeader1.UserImage = SomeImage; //Gets or Sets profile image on the ChatHeader.
+	   chatHeader1.UserTitle = "Abdisamad Moh."; //Gets or Sets User title on the ChatHeader
+	   chatHeader1.UserStatusText = "Typing..."; //Gets or Sets User Status Text on the ChatHeader
+	   chatHeader1.UserTitle = "Abdisamad Moh."; //Gets or Sets User title on the ChatHeader
+
+	   //Fires when user clicks Call Icon.
+	   chatHeader1.OnCallClick += OnCall;
+
+	   function OnCall(object sender, EventArgs e)
+	   {
+	   //Action
+	   }
+
+	   //Fires when user clicks VideoCall Icon.
+	   chatHeader1.OnVideoCallClick += OnVideoCall;
+
+	   function OnVideoCall(object sender, EventArgs e)
+	   {
+	   //Action
+	   }
+
+	    //Fires when user clicks Menu Dot Icon.
+	   chatHeader1.OnMenuDotClick += OnMenuDot;
+
+	   function OnMenuDot(object sender, EventArgs e)
+	   {
+	   //Action
+	   }

@@ -1,0 +1,16 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\bin\Debug\chat.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.Form1.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.MeBubble.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.ChatHeader.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.SearchBox.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.TypingBox.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.Users.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.YouBubble.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\bin\Debug\chat.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\bin\Debug\chat.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\chat\chat\obj\Debug\chat.BeautyForm.resources
