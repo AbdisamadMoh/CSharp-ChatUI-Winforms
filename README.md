@@ -1,7 +1,4 @@
-# CSharp-ChatUI-Winforms
-
-
-This documentation will be complete in 24hours...06/10/2019. I WILL INSTANTLY UPDATE ONCE I COMPLETE WRITING.
+# C# ChatUI
 
 I was searching for a beautiful Chat bubble for C# winform, but the only one i could find was that of Telerik which was not free. So i decided to write one.
 
@@ -12,9 +9,15 @@ I was searching for a beautiful Chat bubble for C# winform, but the only one i c
 
 
 ## Usage
-If you r going to use these chat components in your project, I recommed you to use <b>ChatUI.dll</b> in the folder <b>ChatUI Compiled DLL,</b>. In this <b>ChatUI.dll</b> I have compiled all 7 components in this project.
+If you r going to use these chat components in your project, I recommend you to use <b>ChatUI.dll</b> in the folder <b>ChatUI Compiled DLL,</b>. In this <b>ChatUI.dll</b> I have compiled all 7 components in this project.
 Just drag the dll file into ur visual studio toolbox Or Copy the dll file, create new tab in ur visual studio toolbox and paste.
 
+All components in this project are responsive and u dont need to worry about when ur window or container resizes. They will also resize them with the same space percentage, and their look will be same.
+
+You can install from Nuget
+```nuget
+Install-Package ChatUI -Version 1.0.0
+```
 
 ### Components
 ##### <a href="#BeautyForm">BeautyForm</a>
@@ -85,11 +88,52 @@ searchBox1.OnHitEnter+= Double tab to complete. // Fires when user hits ENTER ke
 ```
 
 ### <div id="#Users">Users</div>
--Documentation still writing...WILL BE AVAILABLE IN 24HRS. 06/10/2019
+Beautiful and customizable User control with Profile image, Username(Title name), user status text, user status mode.
+See users on left side in the screenshots above.
+ ``` C#
+chat.Users user1= new chat.Users();
+
+user1.Username = "Abdisamad Moh."; // Gets/Sets username or user title.
+user1.UserStatus = Status.Online; //Option/Enum, Gets/Sets user status mode. Online, Away, Offline. U can add more if u want.
+user1.StatusMessage = "Online"; //Gets/Sets status message
+user1.UserImage = Some_Image;//Gets/Sets User profile image.
+user1.ProfileImageCursor = Cursors.Hand; //Gets/Sets mouse cursor when user hovers mouse pointer over userImage.
+
+user1.OnClick +=  Double tab to complete. // Fires when anywhere on the user is clicked Including Username, statusText and StatusMode. However they will be excluded if u give them their own event.
+user1.OnUserTitleClick +=  Double tab to complete. // will fire when user clicks Username/Title. In this case, user1.OnClick will not be fired when user clicks on Username/Title.
+user1.OnUserStatusClick +=  Double tab to complete. // will fire when user clicks user status text. In this case, user1.OnClick will not be fired when user clicks on user status text..
+user1.OnUserStatusClick +=  Double tab to complete. // will fire when user clicks user status mode icon. In this case, user1.OnClick will not be fired when user clicks on user status mode icon.
+user1.OnProfileImageClick +=  Double tab to complete. // will fire when user clicks user profile image. In this case, user1.OnClick will not be fired when user clicks on user profile image.
+
+//NOTE: Always use  'OnClick' event for this control instead of 'Click' event. 'OnClick' will take care of all other sub events. Double clicking this control on design time will generate 'Click' event instead of 'OnClick' event which is not recommended. In your Properties explorer find 'OnClick' event and double click to generate 'OnClick' event.
+
+```
 
 ### <div id="#Bubbles">Bubbles (2)</div>
--Documentation still writing...WILL BE AVAILABLE IN 24HRS. 06/10/2019
+See screenshots, those chating messages are the speech bubble. in this Project there are two bubbles, 'MeBubble' and 'YouBubble'. Both have same properties and events but their usage is different. 'MeBubble' is for outgoing chats and 'YouBubble' is for incoming chats.
 
+In this example i will use 'MeBubble'. Both works same way, have same properties and events. Only the name and the usage are different.
+
+ ``` C#
+chat.MeBubble meBubble1 = new chat.MeBubble();
+
+meBubble1.Body = "This is a sample message text"; //Gets/Sets message body.
+meBubble1.MsgColor = Color.DodgerBlue; //Gets/Sets Message background color. 
+//NOTE: 'BackColor' will change the whole control's background color while 'MsgColor' will only change the message Body part.
+meBubble1.MsgTextColor = Color.White;//Gets/Sets message text color.
+meBubble1.ChatImageCursor = Cursors.Default; //Gets/Sets mouse cursor when it hovers over Bubble profile image.
+meBubble1.ChatTextCursor = Cursors.IBeam; //Gets/Sets mouse cursor when it hovers over chat body.
+meBubble1.Status = MessageStatus.Delivered;//Option/Enum, Gets/Sets Message status. This is the tick option. Options:  Sending, Sent, Delivered, Read,  Error,  None, Custom. where None will hide the tick option and Custom will give u option to put what u want.
+meBubble1.StatusImage = Some_Image; //Gets/Sets custom image for the message status option, that is the tick option.
+meBubble1.Time = "11:44 PM"; //Gets/Sets time of the chat bubble.
+meBubble1.TimeColor = Color.White; //Gets/Sets Text Color of the time.
+meBubble1.UserImage = Some_Image; //Gets/Sets Image of the bubble profile image.
+
+meBubble1.OnChatTextClick+= Double tab to complete. //Fires when user clicks message body part.
+meBubble1.OnChatImageClick+= Double tab to complete. //Fires when user clicks the Profile picture of the bubble..
+
+
+```
 
 
 
