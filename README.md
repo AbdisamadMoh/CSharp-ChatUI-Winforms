@@ -16,7 +16,7 @@ All components in this project are responsive and u dont need to worry about whe
 
 You can install from Nuget
 ```nuget
-Install-Package ChatUI -Version 1.0.0
+Install-Package ChatUI.NET -Version 1.0.0
 ```
 
 ### Components
