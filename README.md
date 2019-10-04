@@ -14,10 +14,7 @@ Just drag the dll file into ur visual studio toolbox Or Copy the dll file, creat
 
 All components in this project are responsive and u dont need to worry about when ur window or container resizes. They will also resize them with the same space percentage, and their look will be same.
 
-You can install from Nuget
-```nuget
-Install-Package ChatUI.NET -Version 1.0.0
-```
+
 
 ### Components
 ##### <a href="#BeautyForm">BeautyForm</a>
