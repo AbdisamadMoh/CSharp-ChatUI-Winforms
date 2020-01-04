@@ -1,5 +1,5 @@
 # C# ChatUI
-
+### Beautiful and responsive c# windform Chat bubble/chat speech.
 I was searching for a beautiful Chat bubble for C# winform, but the only one i could find was that of Telerik which was not free. So i decided to write one.
 
 ## ScreenShots
